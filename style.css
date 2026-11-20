@@ -149,3 +149,6 @@ footer p { max-width:520px; color:var(--dim); } footer nav { display:flex; flex-
 .more { color:var(--text); font-weight:600; text-decoration:none; } .more:hover { text-decoration:underline; }
 article.doc { margin:0 auto; padding:8px 24px 0; box-sizing:border-box; } .crumbs { max-width:780px; } article.doc.wide ~ * .crumbs, .crumbs:has(+ article.wide) { max-width:980px; }
 @media (max-width:600px) { article.doc { padding:4px 16px 0; } .crumbs { padding:14px 16px 0; } .steps > li { padding-left:62px; } .steps > li::before { left:14px; } }
+
+/* progress widths (no inline styles, so the CSP can forbid them) */
+.w30{width:30%}.w45{width:45%}.w62{width:62%}.w70{width:70%}.w88{width:88%} .lede.mid{margin:0 auto}
