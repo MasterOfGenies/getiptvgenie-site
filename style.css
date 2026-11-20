@@ -145,7 +145,7 @@ footer p { max-width:520px; color:var(--dim); } footer nav { display:flex; flex-
 .foot { padding:40px 24px; border-top:1px solid var(--line); } .foot-cols { max-width:1100px; margin:0 auto 20px; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
 .foot-cols h3 { font-size:14px; text-transform:uppercase; letter-spacing:.1em; color:var(--dim); } .foot-cols a { display:block; color:var(--muted); text-decoration:none; font-size:15px; margin:6px 0; }
 .foot .fine { max-width:1100px; margin:0 auto; }
-.h1-sub { display:block; font-size:14px; line-height:1.4; letter-spacing:.14em; text-transform:uppercase; color:var(--red); font-weight:700; margin-bottom:14px; }
+.h1-sub { display:block; font-size:13px; line-height:1.4; letter-spacing:.09em; white-space:nowrap; text-transform:uppercase; color:var(--red); font-weight:700; margin-bottom:14px; }
 .more { color:var(--text); font-weight:600; text-decoration:none; } .more:hover { text-decoration:underline; }
 article.doc { margin:0 auto; padding:8px 24px 0; box-sizing:border-box; } .crumbs { max-width:780px; } article.doc.wide ~ * .crumbs, .crumbs:has(+ article.wide) { max-width:980px; }
 @media (max-width:600px) { article.doc { padding:4px 16px 0; } .crumbs { padding:14px 16px 0; } .steps > li { padding-left:62px; } .steps > li::before { left:14px; } }
@@ -185,3 +185,12 @@ article.doc { margin:0 auto; padding:8px 24px 0; box-sizing:border-box; } .crumb
 /* Buy page: the details read left-aligned under the centered plans */
 .doc.left { text-align:left; margin:44px auto 10px; } .doc.left ol li { color:var(--muted); margin-bottom:8px; }
 .stores-row { margin:22px 0 4px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+
+/* ---- hero note, store strip, mini comparison, dev note */
+.hero-note { font-size:15px; color:var(--text); border-left:3px solid var(--green); padding:2px 0 2px 12px; margin:-6px 0 22px; max-width:560px; }
+.cta-strip { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-top:22px; } .cta-strip .btn.small { margin-left:4px; }
+.new3 .cta-strip { justify-content:center; margin-top:30px; }
+#compare-mini { max-width:1140px; } .tablewrap.mini { max-width:900px; margin:28px auto 14px; } .tablewrap.mini .compare { min-width:560px; }
+.devnote { margin:22px 0 0; padding:16px 18px; background:var(--panel); border:1px solid var(--line); border-radius:14px; }
+.devnote p { margin:0 0 8px; font-size:15px; } .devnote .sig { margin:0; font-size:13px; color:var(--dim); }
+@media (max-width:600px) { .h1-sub { white-space:normal; } }
