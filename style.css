@@ -184,3 +184,4 @@ article.doc { margin:0 auto; padding:8px 24px 0; box-sizing:border-box; } .crumb
 @media (min-width:901px) { #live { align-items:start; } #live .mock-channels { margin-top:64px; } }
 /* Buy page: the details read left-aligned under the centered plans */
 .doc.left { text-align:left; margin:44px auto 10px; } .doc.left ol li { color:var(--muted); margin-bottom:8px; }
+.stores-row { margin:22px 0 4px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
