@@ -152,3 +152,35 @@ article.doc { margin:0 auto; padding:8px 24px 0; box-sizing:border-box; } .crumb
 
 /* progress widths (no inline styles, so the CSP can forbid them) */
 .w30{width:30%}.w45{width:45%}.w62{width:62%}.w70{width:70%}.w88{width:88%} .lede.mid{margin:0 auto}
+
+/* ---- "Three new reasons to switch" showcase */
+.new3 { max-width:1140px; margin:0 auto; padding:90px 20px 30px; }
+.new3-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:38px; }
+.new3 article { background:linear-gradient(180deg,var(--panel2),var(--panel)); border:1px solid var(--line); border-radius:22px; padding:22px 22px 26px; transition:transform .2s, border-color .2s; }
+.new3 article:hover { transform:translateY(-4px); border-color:#3a3b42; }
+.new3 h3 { font-size:24px; margin:22px 0 8px; } .new3 p { margin:0; font-size:16px; }
+.mock { height:190px; border-radius:16px; background:radial-gradient(120% 90% at 50% 0%,#1d1e24,#0d0d10); border:1px solid var(--line); position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center; padding:16px; }
+.rec-screen { position:absolute; left:16px; right:16px; top:16px; height:96px; border-radius:10px; background:linear-gradient(135deg,#123a26,#0b1f16); padding:12px 14px; display:flex; flex-direction:column; justify-content:flex-end; }
+.rec-screen b { color:var(--text); font-size:15px; } .rec-screen i { color:var(--muted); font-style:normal; font-size:12px; }
+.rec-pill { position:absolute; top:10px; left:12px; background:var(--red); color:#fff; font-weight:800; font-size:11px; letter-spacing:.06em; padding:4px 9px; border-radius:6px; animation:recblink 1.6s ease-in-out infinite; }
+@keyframes recblink { 50% { opacity:.55; } }
+.rec-shelf { position:absolute; left:16px; right:16px; bottom:14px; } .rec-shelf span { color:var(--muted); font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+.rec-shelf div { display:flex; gap:8px; margin-top:6px; } .rec-shelf em { flex:1; height:34px; border-radius:7px; }
+.rec-shelf .t1 { background:#2c3e66; outline:2px solid var(--red); } .rec-shelf .t2 { background:#5a3b22; } .rec-shelf .t3 { background:#3d2457; }
+.toast { width:100%; max-width:290px; background:#202127; border:1px solid #34353c; border-radius:14px; padding:14px 16px; box-shadow:0 18px 40px rgba(0,0,0,.55); }
+.toast small { display:block; color:var(--red); font-weight:800; letter-spacing:.12em; font-size:10px; }
+.toast b { display:block; color:var(--text); font-size:17px; margin-top:4px; } .toast i { display:block; color:var(--green); font-style:normal; font-size:13px; margin-top:2px; }
+.toast-btns { display:flex; gap:8px; margin-top:12px; } .toast-btns span { font-size:12px; font-weight:700; padding:6px 12px; border-radius:999px; background:#2c2d34; color:var(--muted); }
+.toast-btns .go { background:var(--red); color:#fff; }
+.mock-move { gap:8px; } .tvbox { flex:0 0 68px; height:52px; border:2px solid #3a3b42; border-radius:8px; display:grid; place-items:center; text-align:center; font-size:11px; color:var(--muted); font-weight:700; position:relative; }
+.tvbox::after { content:""; position:absolute; bottom:-9px; left:50%; width:22px; height:5px; margin-left:-11px; background:#3a3b42; border-radius:2px; }
+.code { text-align:center; flex:1; } .code small { display:block; color:var(--dim); font-size:10px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+.code b { display:block; white-space:nowrap; font-size:21px; letter-spacing:.06em; color:var(--text); font-variant-numeric:tabular-nums; margin-top:2px; }
+.code::before { content:"→"; display:block; color:var(--green); font-size:20px; line-height:1; margin-bottom:6px; }
+@media (max-width:900px) { .new3-grid { grid-template-columns:1fr; } .new3 { padding-top:60px; } }
+@media (prefers-reduced-motion:reduce) { .rec-pill { animation:none; } .new3 article { transition:none; } }
+
+/* Live TV: line the mock-up up with the headline instead of floating it mid-column */
+@media (min-width:901px) { #live { align-items:start; } #live .mock-channels { margin-top:64px; } }
+/* Buy page: the details read left-aligned under the centered plans */
+.doc.left { text-align:left; margin:44px auto 10px; } .doc.left ol li { color:var(--muted); margin-bottom:8px; }
