@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://getiptvgenie.com/sitemap.xml
+Sitemap: https://couchbird.app/sitemap.xml
