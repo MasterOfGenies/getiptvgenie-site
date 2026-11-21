@@ -1,4 +1,4 @@
-:root { --bg:#0a0a0b; --panel:#131316; --panel2:#1b1c20; --line:#2a2b30; --text:#f4f4f5; --muted:#a1a2a8; --dim:#66676d; --red:#e3202b; --green:#2fbf71; }
+:root { --bg:#0a0a0b; --panel:#131316; --panel2:#1b1c20; --line:#2a2b30; --text:#f4f4f5; --muted:#a1a2a8; --dim:#8a8b91; --red:#e3202b; --green:#2fbf71; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { margin:0; background:var(--bg); color:var(--text); font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
@@ -194,3 +194,8 @@ article.doc { margin:0 auto; padding:8px 24px 0; box-sizing:border-box; } .crumb
 .devnote { margin:22px 0 0; padding:16px 18px; background:var(--panel); border:1px solid var(--line); border-radius:14px; }
 .devnote p { margin:0 0 8px; font-size:15px; } .devnote .sig { margin:0; font-size:13px; color:var(--dim); }
 @media (max-width:600px) { .h1-sub { white-space:normal; } }
+
+/* Keyboard users: a clear focus ring, and a link that skips straight to the content */
+a:focus-visible, button:focus-visible, summary:focus-visible { outline:3px solid var(--red); outline-offset:3px; border-radius:6px; }
+.skip { position:absolute; left:12px; top:-60px; z-index:100; background:var(--red); color:#fff; padding:10px 16px; border-radius:8px; font-weight:700; text-decoration:none; }
+.skip:focus { top:12px; }
