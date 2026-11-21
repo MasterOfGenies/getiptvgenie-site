@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'self'; script-src 'self'; connect-src 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Best IPTV Player for Fire Stick &amp; Android TV | Couchbird</title>
 <meta name="description" content="A fast, clean IPTV player for Fire Stick, Android TV and NVIDIA Shield: live sports matched to your channels, local news first and multi-view. No ads.">
@@ -35,7 +35,7 @@
   <a class="brand" href="#top" aria-label="Couchbird home"><img src="/icon.png" alt="" width="34" height="34"><span>couchbird</span></a>
   <nav>
     <a href="#live">Live TV</a><a href="/sports-features/">Sports</a><a href="#vod">Movies &amp; Shows</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
-    <a href="/download/">Download</a><a class="btn small" href="/download/">Coming soon</a>
+    <a href="/download/">Download</a><a class="btn small" href="/#join">Get notified</a>
   </nav>
 </header>
 
@@ -43,14 +43,20 @@
 
 <section class="hero">
   <div class="hero-copy">
-    <h1><span class="h1-sub"><span class="dot"></span> The IPTV player for Fire Stick, Android TV &amp; Shield</span> Your IPTV,<br><span class="red">finally easy.</span></h1>
-    <p class="lede">The clean IPTV player that finds the game, your local news and your shows on <em>your</em> channels. Built for the remote. Fast on Fire TV and Android TV.</p>
-    <p class="hero-note">No streams included. Works with your own Xtream Codes or M3U playlist, for services you're authorized to watch.</p>
-    <div class="cta">
-      <a class="btn" href="mailto:support@couchbird.app?subject=Tell%20me%20when%20Couchbird%20launches">Get notified at launch</a>
-      <span class="stores"><span class="pill">Google Play · coming soon</span><span class="pill">Amazon Appstore · coming soon</span></span>
+    <h1><span class="h1-sub"><span class="dot"></span> The IPTV player for Fire Stick, Android TV &amp; Shield</span> The IPTV player that <span class="red">finds the game.</span></h1>
+    <p class="lede">Tonight's games matched to <em>your</em> channels, your local news first, and every show where you left off. Built for the remote. No ads, no trackers.</p>
+    <p class="player-only"><b>Player only.</b> No channels included: bring your own Xtream Codes or M3U provider, for services you're authorized to watch.</p>
+    <div class="cta" id="join">
+    <form class="waitlist" action="/api/waitlist" method="post" data-waitlist>
+      <label class="sr" for="wl-top">Email address</label>
+      <input id="wl-top" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" maxlength="254">
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit">Get notified</button>
+      <p class="wl-msg" role="status" aria-live="polite"></p>
+    </form>
+    <p class="fine wl-note">One email when Couchbird launches. No spam, never shared. <a href="/privacy/#waitlist">How we use it</a></p>
     </div>
-    <p class="fine">Not in the stores yet · 7-day free trial at launch · No ads · No trackers</p>
+    <p class="fine"><span class="pill">Google Play · coming soon</span> <span class="pill">Amazon Appstore · coming soon</span><br>7-day free trial at launch, then <a href="#pricing">$5.99 a year or $19.99 once</a>.</p>
   </div>
 
   <div class="tv" aria-label="Couchbird on a TV, showing tonight's games">
@@ -69,6 +75,10 @@
     </div>
     <div class="stand"></div>
   </div>
+</section>
+
+<section class="proof" aria-label="Why you can trust it">
+  <p><b>480</b> automated checks on a real NVIDIA Shield</p><p><b>0</b> ads</p><p><b>0</b> trackers or analytics</p><p><b>0</b> accounts to create</p>
 </section>
 
 <section class="devices" aria-label="Works on">
@@ -290,6 +300,22 @@
   <p class="fine center">Couchbird is a player only and includes no channels. Use it only with content you have the legal right to access.</p>
 </section>
 
+<section class="join-band" aria-labelledby="join2-h">
+  <p class="kicker center">Coming soon</p>
+  <h2 class="center" id="join2-h">Be first on your couch.</h2>
+  <p class="center">Couchbird is almost ready for Google Play and the Amazon Appstore. Leave your email and we'll tell you the day it's out.</p>
+  <div class="join-form">
+    <form class="waitlist" action="/api/waitlist" method="post" data-waitlist>
+      <label class="sr" for="wl-bottom">Email address</label>
+      <input id="wl-bottom" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" maxlength="254">
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit">Get notified</button>
+      <p class="wl-msg" role="status" aria-live="polite"></p>
+    </form>
+    <p class="fine wl-note">One email when Couchbird launches. No spam, never shared. <a href="/privacy/#waitlist">How we use it</a></p>
+  </div>
+</section>
+
 <section id="faq" class="faq">
   <h2 class="center">Couchbird questions</h2>
   <details><summary>Does Couchbird come with channels?</summary><p>No. Couchbird is a player. You sign in with an Xtream Codes account or an M3U playlist from your own provider. We don't sell, include or recommend any streams.</p></details>
@@ -303,6 +329,9 @@
   <details><summary>Can I watch more than one channel at once?</summary><p>Yes. Multi-view plays two channels side by side, or four at once on stronger devices like NVIDIA Shield and Fire TV Cube. Sound follows the screen you highlight.</p></details>
   <details><summary>What about my privacy?</summary><p>There are no ads, analytics or accounts. Your login stays encrypted on your device. Read the <a href="/privacy/">privacy policy</a>.</p></details>
   <details><summary>Where do I buy it?</summary><p>It isn't available yet: Couchbird is coming soon to Google Play and the Amazon Appstore. Once it's out, you buy it inside the app, through Google Play (Android TV, Google TV, NVIDIA Shield) or the Amazon Appstore (Fire TV). Try it free for 7 days first. Your plan follows your Google or Amazon account to your other TVs.</p></details>
+  <details><summary>What's the best IPTV player for a Fire Stick?</summary><p>The one that's fast on a stick's small memory and doesn't make you scroll. Couchbird is built for that: it opens on your own channels, finds tonight's games for you, and plays two channels at once even on a Fire TV Stick. TiviMate and IPTV Smarters are popular too; our <a href="/best-iptv-player-android-tv/">honest comparison</a> shows where each one is stronger.</p></details>
+  <details><summary>How much space do recordings take?</summary><p>An hour of HD is roughly 1.5 to 3 GB, saved to your TV's own storage. Settings shows how much room is left. A recording uses one of your provider's connections while it runs.</p></details>
+  <details><summary>What do I need for multi-view?</summary><p>Two channels at once works on any supported device. Four at once needs a stronger device such as NVIDIA Shield or Fire TV Cube, plus a plan from your provider that allows that many connections.</p></details>
   <details><summary>Can I get a refund?</summary><p>Refunds go through Google Play or the Amazon Appstore under their refund rules. If something isn't working, email support@couchbird.app first and we'll help.</p></details>
 </section>
 
@@ -311,8 +340,9 @@
 <footer>
   <div><a class="brand" href="#top"><img src="/icon.png" alt="" width="34" height="34"><span>couchbird</span></a>
   <p>Couchbird is a media player. It does not provide any content. You are responsible for having the right to watch what your provider supplies. Team and network names belong to their owners.</p></div>
-  <nav><a href="/terms/">Terms</a><a href="/privacy/">Privacy</a><a href="mailto:support@couchbird.app">support@couchbird.app</a><span>© 2026 Couchbird</span></nav>
+  <nav><span class="status">● Coming soon to Google Play and the Amazon Appstore</span><a href="/terms/">Terms</a><a href="/privacy/">Privacy</a><a href="mailto:support@couchbird.app">support@couchbird.app</a><span>© 2026 Couchbird</span></nav>
 </footer>
 
+<script src="/waitlist.js" defer></script>
 </body>
 </html>

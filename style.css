@@ -208,3 +208,24 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline:3px solid
 
 .soon-bar { background:var(--fill); color:#fff; text-align:center; font-size:15px; padding:9px 16px; line-height:1.4; }
 .soon-bar b { font-weight:700; }
+
+/* Launch waitlist, player-only note, proof strip */
+.sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+.hp { position:absolute; left:-9999px; width:1px; height:1px; opacity:0; }
+.waitlist { display:flex; flex-wrap:wrap; gap:10px; max-width:520px; }
+.waitlist input[type=email] { flex:1 1 240px; min-width:0; font:inherit; font-size:17px; color:var(--text); background:var(--panel2); border:2px solid var(--line); border-radius:999px; padding:14px 22px; outline:none; }
+.waitlist input[type=email]:focus-visible { border-color:var(--red); box-shadow:0 0 0 4px rgba(255,106,43,.18); }
+.waitlist .btn { border:0; cursor:pointer; font:inherit; font-weight:700; }
+.waitlist .btn:disabled { opacity:.85; cursor:default; }
+.waitlist.done input[type=email] { border-color:var(--green); }
+.wl-msg { flex-basis:100%; margin:2px 4px 0; min-height:1.4em; color:var(--text); font-size:15px; }
+.wl-note { margin-top:8px; }
+.player-only { display:inline-block; margin:6px 0 18px; padding:10px 14px; border-radius:12px; background:rgba(34,199,160,.08); border:1px solid rgba(34,199,160,.35); color:var(--text); font-size:15px; max-width:560px; }
+.player-only b { color:var(--green); }
+.proof { display:flex; flex-wrap:wrap; justify-content:center; gap:14px 40px; padding:22px 20px; border-top:1px solid var(--line); }
+.proof p { margin:0; color:var(--muted); font-size:15px; } .proof b { color:var(--text); font-size:22px; margin-right:6px; }
+.join-band { text-align:center; } .join-band .join-form { display:flex; flex-direction:column; align-items:center; } .join-band .waitlist { justify-content:center; width:100%; }
+footer .status { color:var(--amber); font-weight:600; }
+.hero h1 { font-size:clamp(38px,4.6vw,60px); }
+.wl-msg:empty { display:none; }
+.hero .fine .pill, .stores .pill { white-space:nowrap; display:inline-block; margin:0 6px 8px 0; }
