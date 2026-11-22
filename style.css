@@ -238,3 +238,6 @@ footer .status { color:var(--amber); font-weight:600; }
 
 .tour { max-width:960px; margin:28px auto 8px; border-radius:18px; overflow:hidden; border:1px solid var(--line); box-shadow:0 30px 70px rgba(0,0,0,.5); background:#000; }
 .tour video { display:block; width:100%; height:auto; aspect-ratio:16/9; }
+
+p.h1-sub { margin:0 0 6px; display:block; }
+.soon-note { display:inline-block; margin:0 0 18px; padding:10px 14px; border-radius:12px; background:rgba(255,176,32,.08); border:1px solid rgba(255,176,32,.35); color:var(--text); font-size:15px; }
