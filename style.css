@@ -235,3 +235,6 @@ footer .status { color:var(--amber); font-weight:600; }
 .gallery img { display:block; width:100%; height:auto; }
 .gallery figcaption { padding:12px 16px; color:var(--muted); font-size:15px; }
 @media (max-width:700px) { .gallery .shots { grid-template-columns:1fr; } }
+
+.tour { max-width:960px; margin:28px auto 8px; border-radius:18px; overflow:hidden; border:1px solid var(--line); box-shadow:0 30px 70px rgba(0,0,0,.5); background:#000; }
+.tour video { display:block; width:100%; height:auto; aspect-ratio:16/9; }
