@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'self'; script-src 'self'; connect-src 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Get Couchbird for Fire Stick, Android TV &amp; Shield</title><meta name="description" content="Couchbird is coming to the Amazon Appstore for Fire TV and Google Play for Android TV, Google TV and NVIDIA Shield. Free for 7 days, no ads, no account.">
 <link rel="canonical" href="https://couchbird.app/download/">
-<meta property="og:type" content="website"><meta property="og:url" content="https://couchbird.app/download/"><meta property="og:title" content="Download Couchbird"><meta property="og:description" content="Install Couchbird on Fire TV, NVIDIA Shield and Android TV.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://couchbird.app/download/"><meta property="og:title" content="Get Couchbird for Fire Stick, Android TV &amp; Shield"><meta property="og:description" content="Install Couchbird on Fire TV, NVIDIA Shield and Android TV.">
 <meta property="og:image" content="https://couchbird.app/og.png"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/icon.png"><link rel="preload" href="/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../style.css?v=2"></head>
+<link rel="stylesheet" href="../style.css?v=3"></head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <div class="soon-bar" role="note"><b>Coming soon</b> to Google Play and the Amazon Appstore. Couchbird isn't available to download yet.</div>
@@ -18,6 +18,19 @@
   <p class="kicker">Get Couchbird</p>
   <h1>Get Couchbird: coming soon to Google Play and the Amazon Appstore</h1>
   <p class="lede">Install it like any other app: no sideloading, no developer settings. Free for 7 days, no account needed. Sign in with your own IPTV provider.</p>
+
+  <div class="cta" id="join">
+    <h2>Get an email the day it launches</h2>
+    <p>Couchbird isn't in the stores yet. Leave your email and we'll write once, when you can install it.</p>
+    <form class="waitlist" action="/api/waitlist" method="post" data-waitlist>
+      <label class="sr" for="wl-download">Email address</label>
+      <input id="wl-download" name="email" type="email" required autocomplete="email" inputmode="email" placeholder="you@email.com" maxlength="254">
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit">Get notified</button>
+      <p class="wl-msg" role="status" aria-live="polite"></p>
+    </form>
+    <p class="fine wl-note">One email when Couchbird launches. No spam, never shared. <a href="/privacy/#waitlist">How we use it</a></p>
+  </div>
 
   <h2>Fire TV (Stick, Cube, Fire TV smart TVs)</h2>
   <ol class="devlist">
@@ -59,5 +72,6 @@
   <p><a class="btn" href="/buy/">See plans</a></p>
 </section>
 </main>
+<script src="/waitlist.js" defer></script>
 <footer><div><p>Couchbird is a media player. It does not provide any content.</p></div><nav><a href="/terms/">Terms</a><a href="/privacy/">Privacy</a><a href="mailto:support@couchbird.app">support@couchbird.app</a><span>© 2026 Couchbird</span></nav></footer>
 </body></html>

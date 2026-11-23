@@ -2,19 +2,29 @@
 
 > An IPTV player for Fire TV, Android TV, Google TV and NVIDIA Shield. It plays your own provider's Xtream Codes or M3U playlist: a sports guide matched to your channels, local channels first, recording, multi-view, no ads or trackers. It does not provide any content.
 
+## Couchbird at a glance
+- What it is: an IPTV player app for Fire TV, Android TV, Google TV and NVIDIA Shield.
+- What it isn't: a TV service. It includes no channels, films or shows. Users sign in with their own provider's Xtream Codes login or M3U playlist.
+- Status: not released yet. Coming to Google Play and the Amazon Appstore.
+- Price at launch: free for 7 days, then $5.99 a year or $19.99 once.
+- Built for: live sports matched to the user's channels, local news first, a full TV guide, recording, catch-up, and two or four channels at once.
+- Privacy: no ads, no analytics, no trackers and no account. The provider login stays encrypted on the TV.
+- Devices: Fire TV Stick (2nd gen or newer), Fire TV Cube, NVIDIA Shield, Chromecast with Google TV, Google TV Streamer and Android TV 7.1 or newer. Not Roku, Apple TV, or Samsung and LG TVs' own systems.
+- Contact: support@couchbird.app
+
 ## Pages
-- [Best Android TV IPTV Player: Couchbird vs TiviMate vs Smarters](https://couchbird.app/best-iptv-player-android-tv/): An honest comparison of Couchbird, TiviMate and IPTV Smarters on Android TV, Fire Stick and Shield: sports, recording, multi-view, ads and price.
+- [Best IPTV Player for Android TV, Compared](https://couchbird.app/best-iptv-player-android-tv/): An honest comparison of Couchbird, TiviMate and IPTV Smarters on Android TV, Fire Stick and Shield: sports, recording, multi-view, ads and price.
 - [TiviMate Alternative for Sports & Local TV | Couchbird](https://couchbird.app/tivimate-alternative/): Looking for a TiviMate alternative? Couchbird adds live sports scores matched to your channels and local news first, with no ads. Honest pros and cons.
 - [IPTV Smarters Alternative with No Ads | Couchbird](https://couchbird.app/iptv-smarters-alternative/): An IPTV Smarters alternative for Fire TV, Android TV and Shield: no ads in any version, a live sports guide and local channels first. Honest pros and cons.
-- [Best IPTV Player for Fire Stick: 2-Minute Setup Guide](https://couchbird.app/fire-stick-setup/): Couchbird is coming soon to the Amazon Appstore. How it will install on a Fire TV Stick, 4K Max, Lite or Cube in three steps: no ads, live sports guide.
-- [Best IPTV Player for NVIDIA Shield: Setup Guide | Couchbird](https://couchbird.app/nvidia-shield-setup/): Couchbird is coming soon to Google Play. How it will install on NVIDIA Shield, Google TV or Chromecast in 4 steps: four-game multi-view, no ads or trackers.
+- [How to Install an IPTV Player on Fire Stick](https://couchbird.app/fire-stick-setup/): How to install Couchbird, an IPTV player coming soon to the Amazon Appstore, on a Fire TV Stick, 4K Max, Lite or Cube: three steps, no sideloading.
+- [How to Install an IPTV Player on NVIDIA Shield](https://couchbird.app/nvidia-shield-setup/): How to install Couchbird, an IPTV player coming soon to Google Play, on NVIDIA Shield, Google TV or Chromecast in four steps, with four-game multi-view.
 - [IPTV Player with Live Sports Scores | Couchbird](https://couchbird.app/sports-features/): See every NFL, NBA, NHL, MLB and college game today, matched to your IPTV channels with live scores. Watch 2 or 4 games at once. No ads.
 - [IPTV Player with Recording for Fire Stick | Couchbird](https://couchbird.app/recording/): Record live IPTV on Fire Stick, Android TV and NVIDIA Shield: record now or schedule from the guide. Keeps recording with the app closed.
 - [IPTV Multiview: Watch 2 or 4 Channels at Once | Couchbird](https://couchbird.app/multi-view/): Watch two or four live channels at once, or picture-in-picture, on Fire TV, Android TV and NVIDIA Shield. Sound follows the tile you pick.
 - [IPTV Player with Local Channels First | Couchbird](https://couchbird.app/local-channels/): Couchbird finds your city's ABC, CBS, NBC, FOX and CW stations in your playlist and puts local news first. 43 US markets, VPN-aware.
 - [About Couchbird: An Independent, Private IPTV Player](https://couchbird.app/about/): Couchbird is an independent IPTV player for Fire TV, Android TV and NVIDIA Shield: no ads, no trackers, and honest about what it does.
-- [Contact Couchbird Support](https://couchbird.app/contact/): Email Couchbird support at support@couchbird.app for help with setup, purchases or privacy questions. A real person reads every message.
-- [Terms of Use | Couchbird](https://couchbird.app/terms/): The terms for using Couchbird: a media player for your own lawful IPTV services. Plans, auto-renewal, refunds, device limits and liability.
-- [Privacy Policy | Couchbird](https://couchbird.app/privacy/): Couchbird has no accounts, ads, analytics or tracking. Your IPTV login stays encrypted on your device. Read exactly what the app connects to and why.
+- [Contact Couchbird Support: Setup and Billing Help](https://couchbird.app/contact/): Email Couchbird support at support@couchbird.app for help with setup, purchases or privacy questions. A real person reads every message.
+- [Terms of Use for the Couchbird IPTV Player](https://couchbird.app/terms/): The terms for using Couchbird: a media player for your own lawful IPTV services. Plans, auto-renewal, refunds, device limits and liability.
+- [Couchbird Privacy Policy: No Ads, No Tracking](https://couchbird.app/privacy/): Couchbird has no accounts, ads, analytics or tracking. Your IPTV login stays encrypted on your device. Read exactly what the app connects to and why.
 - [Get it](https://couchbird.app/download/): Where to get it on Fire TV, Android TV and Google TV.
 - [Pricing](https://couchbird.app/buy/): $5.99 a year or $19.99 lifetime through Google Play or the Amazon Appstore, 7-day free trial.
